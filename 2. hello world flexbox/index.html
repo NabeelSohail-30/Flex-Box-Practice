@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sectionOne {
+            border: 2px solid red;
+            display: flex;
+            height: 400px;
+            flex-wrap: wrap;
+        }
+
+        .sectionOne>.left>img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .sectionOne>.left {
+            border: 2px solid blue;
+            /* width: 30%; */
+            flex-grow: 30;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sectionOne>.right {
+            border: 2px solid blue;
+            /* width: 70%; */
+            flex-grow: 70;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .sectionOne>.right> h1,
+        .sectionOne>.right> h2,
+        .sectionOne>.right> h4{
+            margin: 5px;
+        }
+
+        .section2{
+            display: flex;
+            border: 2px solid orangered;
+            height: 600px;
+            flex-wrap: wrap;
+        }
+
+        .containerLeft{
+            flex-grow: 48;
+            border: 2px solid green;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .containerRight{
+            flex-grow: 48;
+            border: 2px solid green;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .containerMid{
+            flex-grow: 2;
+            border: 2px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vl{
+            width: 6px;
+            background-color: blue;
+            height: 300px;
+        }
+
+        .titles{
+            border: 2px solid saddlebrown;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 10px;
+        }
+
+        .data{
+            border: 2px solid saddlebrown;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sectionOne">
+        <div class="left">
+            <img src="./img/profile.jpg" alt="">
+        </div>
+        <div class="right">
+
+            <h1>M.Inzamam Malik</h1>
+            <h4>Ai Chatbot and Web Developer</h4>
+            <h2>Best Chatbot developer in the World</h2>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="containerLeft">
+            <div class="titles">
+                <h2>Name</h2>
+                <h2>Age</h2>
+                <h2>Phone</h2>
+                <h2>Email</h2>
+            </div>
+        </div>
+        <div class="containerMid">
+            <div class="vl"></div>
+        </div>
+        <div class="containerRight">
+            <div class="data">
+                <h2>Name</h2>
+                <h2>Age</h2>
+                <h2>Phone</h2>
+                <h2>Email</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
